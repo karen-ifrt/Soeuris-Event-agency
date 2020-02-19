@@ -1,0 +1,54 @@
+
+header {
+    background-color: $color4;
+    opacity: 0.9;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .logo {
+            width: 200px;
+        }
+        
+        .menu-desktop {
+            ul {
+                display: flex;
+                li {
+                    margin-left: 30px;
+                    a {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: $color2;    
+                        font-family: "Cocomat";
+                        position: relative;
+                        font-size: 0.9rem;
+                        letter-spacing: 0.1rem;
+                        &:before {
+                            transition: all .3s;
+                            content: '';
+                            height: 2px;
+                            width: 0%;
+                            position: absolute;
+                            bottom: -10px;
+                            left: 50%;
+                            background-color: $color2;
+                            transform: translateX(-50%);
+                        }
+                        &:hover {
+                            text-decoration: none;
+                            &:before {
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

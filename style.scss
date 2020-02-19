@@ -1,0 +1,18 @@
+/*
+Theme Name: Soeur'is
+Theme URI: 
+Author: Karen IAFRATE
+Author URI: 
+Description: Soeur'is
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+@import "assets/scss/general/reset.scss";
+@import "assets/scss/general/variables.scss";
+@import "assets/scss/general/fonts.scss";
+@import "assets/scss/partials/header.scss";
+@import "assets/scss/partials/home.scss";
+@import "assets/scss/partials/agence.scss";
+@import "assets/scss/responsive/home.scss";
+@import "assets/scss/responsive/header.scss";

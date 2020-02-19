@@ -1,0 +1,17 @@
+@media (max-width: 768px) {  
+    .hero {
+        .encard-hero {
+            background-size: cover;
+            .img-content {
+                width: 400px;
+                h1 {
+                    font-size: 1.2rem;
+                    line-height: 1.4;
+                }
+                h2 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
