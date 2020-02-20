@@ -22,5 +22,12 @@ function wpdocs_soeuris_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'wpdocs_soeuris_scripts' );
 
-// Fonction récupérer les templates
+// Images custom size
 
+add_image_size('custom-size', 220, 220, true);
+
+// ACF Options
+
+if(function_exists('acf_add_options_page')) {
+    acf_add_options_page();
+}

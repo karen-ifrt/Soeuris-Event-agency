@@ -2,10 +2,44 @@
     font-family: "Cocomat";
     src: url("assets/fonts/cocomat_light-trial-webfont.woff") format("woff");
 }
-
-@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap');
+@font-face {
+    font-family: "Nunito";
+    src: url("assets/fonts/nunitosans-regular-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Nunito-light";
+    src: url("assets/fonts/nunitosans-light-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Nunito-bold";
+    src: url("assets/fonts/nunitosans-bold-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Nunito-semibold";
+    src: url("assets/fonts/nunitosans-semibold-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Nunito-extrabold";
+    src: url("assets/fonts/nunitosans-extrabold-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Caveat";
+    src: url("assets/fonts/caveat-regular-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Caveat-bold";
+    src: url("assets/fonts/caveat-bold-webfont.woff") format("woff");
+}
 
 
 // Name
 $font1: "Cocomat", sans-serif;
-$font2: "Caveat", sans-serif;
+$font2: "Nunito", sans-serif;
+$font3: "Caveat", sans-serif;
+
+// Déclinaisons
+$fontlight: "Nunito-light", sans-serif;
+$fontbold: "Nunito-bold", sans-serif;
+$fontsemibold: "Nunito-semibold", sans-serif;
+$fontextrabold: "Nunito-extrabold", sans-serif;
+$Caveatbold: "Caveat-bold", sans-serif;

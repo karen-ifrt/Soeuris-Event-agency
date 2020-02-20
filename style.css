@@ -7,7 +7,6 @@ Description: Soeur'is
 Requires at least: WordPress 5.0
 Version: 1.0
 */
-@import url("https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,12 +53,33 @@ table {
 @font-face {
   font-family: "Cocomat";
   src: url("assets/fonts/cocomat_light-trial-webfont.woff") format("woff"); }
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/nunitosans-regular-webfont.woff") format("woff"); }
+@font-face {
+  font-family: "Nunito-light";
+  src: url("assets/fonts/nunitosans-light-webfont.woff") format("woff"); }
+@font-face {
+  font-family: "Nunito-bold";
+  src: url("assets/fonts/nunitosans-bold-webfont.woff") format("woff"); }
+@font-face {
+  font-family: "Nunito-semibold";
+  src: url("assets/fonts/nunitosans-semibold-webfont.woff") format("woff"); }
+@font-face {
+  font-family: "Nunito-extrabold";
+  src: url("assets/fonts/nunitosans-extrabold-webfont.woff") format("woff"); }
+@font-face {
+  font-family: "Caveat";
+  src: url("assets/fonts/caveat-regular-webfont.woff") format("woff"); }
+@font-face {
+  font-family: "Caveat-bold";
+  src: url("assets/fonts/caveat-bold-webfont.woff") format("woff"); }
 header {
-  background-color: #eee;
-  opacity: 0.9;
+  background-color: #fff;
+  opacity: 1;
   z-index: 100;
   position: absolute;
-  top: 0;
+  top: 30px;
   width: 100%; }
   header nav {
     display: flex;
@@ -69,12 +89,24 @@ header {
       width: 200px; }
     header nav .menu-desktop ul {
       display: flex; }
+      header nav .menu-desktop ul .current_page_item a {
+        color: #C84876; }
+        header nav .menu-desktop ul .current_page_item a:before {
+          transition: all .3s;
+          content: '';
+          height: 2px;
+          width: 80%;
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          background-color: #C84876;
+          transform: translateX(-50%); }
       header nav .menu-desktop ul li {
         margin-left: 30px; }
         header nav .menu-desktop ul li a {
           font-weight: bold;
           text-transform: uppercase;
-          color: #C04D76;
+          color: #923556;
           font-family: "Cocomat";
           position: relative;
           font-size: 0.9rem;
@@ -87,7 +119,7 @@ header {
             position: absolute;
             bottom: -10px;
             left: 50%;
-            background-color: #C04D76;
+            background-color: #923556;
             transform: translateX(-50%); }
           header nav .menu-desktop ul li a:hover {
             text-decoration: none; }
@@ -95,7 +127,7 @@ header {
               width: 80%; }
 
 .hero {
-  font-family: "Cocomat";
+  font-family: "Cocomat", sans-serif;
   background-image: url("assets/img/bg_home_2.jpg");
   background-size: cover;
   height: 500px;
@@ -118,17 +150,67 @@ header {
       font-size: 1.8rem;
       margin-bottom: 15px;
       font-weight: bold;
-      color: #C04D76;
+      color: #923556;
       text-transform: uppercase; }
     .hero .img-content h2 {
       font-size: 1.5rem;
       line-height: 1.3; }
 
-.agence h2 {
-  font-family: "Caveat", sans-serif;
-  font-size: 2.5rem; }
-.agence .agence-content {
-  font-family: "Cocomat", sans-serif; }
+.agence {
+  background-color: #F7F7F2;
+  padding: 50px 0; }
+  .agence h2 {
+    font-family: "Caveat", sans-serif;
+    font-size: 2.8rem;
+    color: #923556;
+    margin-bottom: 40px; }
+  .agence .agence-content {
+    font-family: "Nunito-light", sans-serif;
+    line-height: 1.7;
+    color: rgba(53, 50, 47, 0.8); }
+    .agence .agence-content p {
+      margin-bottom: 20px; }
+
+.prestations {
+  padding: 50px 0; }
+  .prestations h2 {
+    font-family: "Caveat", sans-serif;
+    text-align: center;
+    font-size: 2.8rem;
+    color: #D0A245;
+    margin-bottom: 40px; }
+  .prestations .block-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .prestations .block-content .block-img {
+      margin-bottom: 20px; }
+      .prestations .block-content .block-img img {
+        border-radius: 100%; }
+    .prestations .block-content .block-title {
+      font-family: "Cocomat", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      color: #D0A245; }
+    .prestations .block-content .block-description {
+      font-family: "Nunito-light", sans-serif;
+      color: rgba(53, 50, 47, 0.8);
+      margin-top: 20px;
+      text-align: justify; }
+    .prestations .block-content .more {
+      margin-top: 30px; }
+      .prestations .block-content .more a {
+        font-family: "Nunito", sans-serif;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border: 1px solid #D0A245;
+        color: #D0A245;
+        border-radius: 3px;
+        transition: all .5s; }
+        .prestations .block-content .more a:hover {
+          text-decoration: none;
+          background: #D0A245;
+          color: #F7F7F2; }
 
 @media (max-width: 768px) {
   .hero .encard-hero {

@@ -1,0 +1,51 @@
+.prestations {
+    padding: 50px 0;
+    h2 {
+        font-family: $font3;
+        text-align: center;
+        font-size: 2.8rem;
+        color: $color6;
+        margin-bottom: 40px;
+    }
+
+    .block-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .block-img {
+            margin-bottom: 20px;
+            img {
+                border-radius: 100%;
+            }
+        }
+        .block-title {
+            font-family: $font1;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            color: $color6;
+        }
+        .block-description {
+            font-family: $fontlight;
+            color: $degrade2;
+            margin-top: 20px;
+            text-align: justify;
+        }
+        .more {
+            margin-top: 30px;
+            a {
+                font-family: $font2;
+                text-transform: uppercase;
+                padding: 10px 15px;
+                border: 1px solid $color6;
+                color: $color6;
+                border-radius: 3px;
+                transition: all .5s;
+                &:hover {
+                    text-decoration: none;
+                    background: $color6;
+                    color: $color5;
+                }
+            }
+        }
+    }
+}
