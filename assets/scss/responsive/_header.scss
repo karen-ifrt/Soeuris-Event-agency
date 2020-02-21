@@ -1,6 +1,29 @@
-@media (max-width: 576px) {
-    .menu-desktop {
-        display: none;
+@media (max-width: 768px) {
+
+    header {
+        .social-nav {
+            .all-first-nav {                
+                flex-direction: column;
+                align-items: center;
+                .contact-nav {
+                    flex-direction: column;
+                    .home {
+                        margin-left: 0;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            ul {
+                margin-top: 10px;
+                li {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    
+        .menu-desktop {
+            display: none;
+        }
     }
 
  }

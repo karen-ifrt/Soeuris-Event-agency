@@ -2,10 +2,50 @@
 header {
     background-color: #fff;
     opacity: 1;
-    z-index: 100;
-    position: absolute;
-    top: 30px;
     width: 100%;
+    .social-nav {
+        background: $color1;
+        padding: 5px 0;
+        display: flex;
+        .all-first-nav {
+            font-family: $fontsemibold;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: $degrade2;
+            .contact-nav {
+                display: flex;
+                .phone {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+                .home {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            ul {
+                display: flex;
+                li {
+                    filter: grayscale(1);
+                    transition: all .5s;
+                    &:hover {
+                        filter: grayscale(0);
+                    }
+                }
+                .instagram {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
     nav {
         display: flex;
         align-items: center;
