@@ -37,3 +37,34 @@ if (function_exists('add_image_size')) {
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page();
 }
+
+// Custom Post Type
+function create_posttype()
+{
+
+    register_post_type(
+        'evenements',
+        // CPT Options
+        array(
+            'labels' => array(
+                'name' => __('Événements'),
+                'singular_name' => __('Événements')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'evenements'),
+            'show_in_rest' => true,
+            'menu_icon' => 'dashicons-buddicons-groups',
+
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action('init', 'create_posttype');
+
+
+// Désactiver le bloc d'édition
+
+add_action( 'init', function() {
+    remove_post_type_support( 'evenements', 'editor' );
+    }, 99);

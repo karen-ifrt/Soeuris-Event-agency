@@ -33,11 +33,12 @@
     }
 }
 
+
 .home-blocks {
     padding: 50px 0;
     .first-block {
         display: flex;
-        align-items: center;
+        align-items: flex-start;        
     }
     .home-block-img {
         width: 50%;
@@ -53,20 +54,24 @@
             font-size: 2rem;
             margin-bottom: 15px;
             color: $color7;
+            margin-top: 30px;
         }
         .home-block-descr {
             font-family: $fontlight;
             color: $degrade2;
-            pre {
-                overflow-x: hidden;
-                white-space : pre-wrap;
+            p {
+                overflow: hidden;
+                white-space: pre-wrap;
                 line-height: 1.3;
                 width: 100%;
                 font-size: 0.95rem;
+                color: $degrade2;
+                font-family: $fontlight;
             }
         }
     }
 }
+
 
 .hero-carousel {
     .first-image {
@@ -91,6 +96,21 @@
             object-fit: cover;
             width: 100%;
             height: 100%;
+        }
+    }
+}
+
+.banniere-home {
+    background: $color5;
+    padding: 30px;
+    .banniere-home-content {
+        display: flex;
+        justify-content: center;
+        p {
+            font-family: $font1;
+            color: $color6;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
         }
     }
 }

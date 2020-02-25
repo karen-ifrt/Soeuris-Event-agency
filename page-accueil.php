@@ -36,6 +36,11 @@
     </div>
 </div>
 
+<div class="banniere-home">
+    <div class="banniere-home-content">
+        <p>Créatrices d'événements magiques</p>
+    </div>
+</div>
 
 <div class="container">
     <div class="home-blocks">
@@ -58,8 +63,8 @@
                             <h3>Nos événements</h3>
                         </div>
                         <div class="home-block-descr">
-                            <pre><?php the_field('description_1'); ?>
-                            </pre>
+                            <p><?php the_field('description_1'); ?>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -82,8 +87,8 @@
                             <h3>Nos décorations</h3>
                         </div>
                         <div class="home-block-descr">
-                        <pre><?php the_field('description_2'); ?>
-                            </pre>
+                            <p><?php the_field('description_2'); ?>
+                    </p>
                         </div>
                     </div>
                 </div>
@@ -91,19 +96,19 @@
         </div>
         <div class="row no-gutters">
             <div class="col-md-6">
-                <div class="first-block">
+                <div class="first-block" id="block-reverse">
                     <div class="home-block-content">
                         <div class="home-block-title">
                             <h3>Nos locations</h3>
                         </div>
                         <div class="home-block-descr">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odit doloribus dolores ipsa architecto quidem earum et totam dolorum! Dolore nemo error totam repudiandae repellat accusantium alias. Deleniti, reiciendis et!
-                            </p>
+                            <p><?php the_field('description_3'); ?>
+                    </p>
                         </div>
                     </div>
                     <div class="home-block-img">
                         <?php
-                        $image = get_field('image_1');
+                        $image = get_field('image_3');
                         $size = 'custom-size-home';
                         $thumb = $image['sizes'][$size];
 
@@ -115,19 +120,19 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="first-block">
+                <div class="first-block" id="block-reverse">
                     <div class="home-block-content">
                         <div class="home-block-title">
                             <h3>Nos créations</h3>
                         </div>
                         <div class="home-block-descr">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odit doloribus dolores ipsa architecto quidem earum et totam dolorum! Dolore nemo error totam repudiandae repellat accusantium alias. Deleniti, reiciendis et!
-                            </p>
+                            <p><?php the_field('description_4'); ?>
+                    </p>
                         </div>
                     </div>
                     <div class="home-block-img">
                         <?php
-                        $image = get_field('image_1');
+                        $image = get_field('image_4');
                         $size = 'custom-size-home';
                         $thumb = $image['sizes'][$size];
 
@@ -142,8 +147,11 @@
     </div>
 </div>
 
-
-
+<div class="banniere-home">
+    <div class="banniere-home-content">
+        <p>Nos derniers événements</p>
+    </div>
+</div>
 
 
 <?php get_footer(); ?>

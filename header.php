@@ -50,12 +50,3 @@
             </nav>
         </div>
     </header>
-
-    <!-- <section class="hero">
-        <div class="encard-hero">
-            <div class="img-content">
-                <h1><?php // the_field('titre_hero'); ?></h1>
-                <h2><?php // the_field('sous-titre_hero'); ?></h2>
-            </div>
-        </div>
-    </section> -->
