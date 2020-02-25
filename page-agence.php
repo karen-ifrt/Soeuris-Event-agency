@@ -19,4 +19,5 @@
 
 <?php include (TEMPLATEPATH . "/template-parts/what_we_do.php"); ?>
 
+
 <?php get_footer(); ?>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Soeur'is
 Theme URI: 
@@ -103,10 +104,9 @@ header {
       header .social-nav .all-first-nav ul {
         display: flex; }
         header .social-nav .all-first-nav ul li {
-          filter: grayscale(1);
           transition: all .5s; }
           header .social-nav .all-first-nav ul li:hover {
-            filter: grayscale(0); }
+            filter: grayscale(1); }
         header .social-nav .all-first-nav ul .instagram {
           margin-left: 15px; }
   header nav {
@@ -309,6 +309,64 @@ header {
     margin-top: 50px; }
     .prestations .block-content .block-description {
       height: auto; } }
+.single-event {
+  margin-top: 50px;
+  background: #F7F7F2; }
+  .single-event .event-title {
+    margin-bottom: 15px;
+    padding: 30px 0; }
+    .single-event .event-title h1 {
+      text-transform: uppercase;
+      font-family: "Cocomat", sans-serif;
+      font-size: 2.5rem;
+      color: #D0A245; }
+  .single-event .event-date p {
+    font-family: "Nunito-light", sans-serif;
+    color: rgba(53, 50, 47, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 10px; }
+  .single-event .event-content p {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    color: rgba(53, 50, 47, 0.8);
+    font-family: "Nunito-light", sans-serif;
+    font-size: 1.1rem; }
+  .single-event #slider .slick-prev::before {
+    content: "‹";
+    font-size: 3rem;
+    opacity: 0.8;
+    padding: 0px 20px 10px 20px;
+    border-radius: 100%;
+    background: #F7F7F2;
+    color: #923556;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; }
+  .single-event #slider .slick-arrow:hover {
+    background-color: #923556; }
+  .single-event #slider .slick-next::before {
+    content: "›";
+    font-size: 3rem;
+    opacity: 0.8;
+    padding: 0px 20px 10px 20px;
+    border-radius: 100%;
+    background: #F7F7F2;
+    color: #923556;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; }
+  .single-event #slider .slides {
+    height: 600px; }
+    .single-event #slider .slides img {
+      width: 100%;
+      height: 100%; }
+
 @media (max-width: 768px) {
   .hero .encard-hero {
     background-size: cover; }
@@ -349,5 +407,7 @@ header {
         filter: grayscale(0); }
   header .menu-desktop {
     display: none; } }
+body {
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=style.css.map */

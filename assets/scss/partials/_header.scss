@@ -34,10 +34,10 @@ header {
             ul {
                 display: flex;
                 li {
-                    filter: grayscale(1);
+                    // filter: grayscale(1);
                     transition: all .5s;
                     &:hover {
-                        filter: grayscale(0);
+                        filter: grayscale(1);
                     }
                 }
                 .instagram {

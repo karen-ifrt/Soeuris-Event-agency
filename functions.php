@@ -19,6 +19,7 @@ function wpdocs_soeuris_scripts()
     wp_enqueue_script('bootstrap-4-js', get_template_directory_uri() . '/assets/bootstrap/bootstrap.js', array('jquery'), 'v4.0.0', true);
     wp_enqueue_script('slick-min-js', get_template_directory_uri() . '/assets/slick/slick.min.js', array(), '1.0', true);
     wp_enqueue_script('slick-js', get_template_directory_uri() . '/assets/js/slick.js', array(), '1.0', true);
+    wp_enqueue_script('script-js', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0', true);
     wp_enqueue_style('bootstrap-4', get_template_directory_uri() . '/assets/bootstrap/bootstrap.css', array(), 'v4.0.0', 'all');
     wp_enqueue_style('slick', get_template_directory_uri() . '/assets/slick/slick.css', array(), '1.0');
     wp_enqueue_style('main-css', get_template_directory_uri() . '/style.css', array(), '1.0');
@@ -30,6 +31,7 @@ add_action('wp_enqueue_scripts', 'wpdocs_soeuris_scripts');
 if (function_exists('add_image_size')) {
     add_image_size('custom-size', 220, 220, true);
     add_image_size('custom-size-home', 300, 300, true);
+    add_image_size('carousel-events', 500, 800, false);
 }
 
 // ACF Options
@@ -55,6 +57,7 @@ function create_posttype()
             'rewrite' => array('slug' => 'evenements'),
             'show_in_rest' => true,
             'menu_icon' => 'dashicons-buddicons-groups',
+            'taxonomies' => array('category', 'post_tag'),
 
         )
     );
@@ -63,8 +66,8 @@ function create_posttype()
 add_action('init', 'create_posttype');
 
 
-// Désactiver le bloc d'édition
+// Désactiver le bloc d'édition dans le CPT Evenements
 
-add_action( 'init', function() {
-    remove_post_type_support( 'evenements', 'editor' );
-    }, 99);
+add_action('init', function () {
+    remove_post_type_support('evenements', 'editor');
+}, 99);

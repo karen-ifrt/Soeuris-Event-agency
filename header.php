@@ -26,8 +26,8 @@
                     </div>
 
                     <ul>
-                        <li><a href="https://www.facebook.com/Soeuris-sur-le-g%C3%A2teau-246436362929936/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" alt="Facebook Soeur'is sur le gateau" width="30"></a></li>
-                        <li><a href="https://www.instagram.com/soeur.is.sur.le.gateau/" target="_blank"><img class="instagram" src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg" alt="Instagram Soeur'is sur le gateau" width="30"></a></li>
+                        <li><a href="https://www.facebook.com/Soeuris-sur-le-g%C3%A2teau-246436362929936/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" alt="Facebook Soeur'is sur le gateau" width="25"></a></li>
+                        <li><a href="https://www.instagram.com/soeur.is.sur.le.gateau/" target="_blank"><img class="instagram" src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg" alt="Instagram Soeur'is sur le gateau" width="25"></a></li>
                     </ul>
                 </div>
 

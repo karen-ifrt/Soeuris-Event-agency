@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="hero-carousel">
     <div class="first-image">
         <?php
@@ -152,6 +151,5 @@
         <p>Nos derniers événements</p>
     </div>
 </div>
-
 
 <?php get_footer(); ?>
