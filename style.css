@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Theme Name: Soeur'is
 Theme URI: 
@@ -309,62 +308,110 @@ header {
     margin-top: 50px; }
     .prestations .block-content .block-description {
       height: auto; } }
+#full-events .all-event-content {
+  text-align: center; }
+  #full-events .all-event-content a:hover {
+    text-decoration: none; }
+  #full-events .all-event-content .event-first-pic {
+    position: relative; }
+    #full-events .all-event-content .event-first-pic img {
+      width: 100%;
+      height: 100%;
+      border-radius: 3px; }
+  #full-events .all-event-content .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    transition: all .5s; }
+    #full-events .all-event-content .overlay:hover {
+      opacity: 0.8; }
+    #full-events .all-event-content .overlay .caption {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      margin: 0 auto; }
+      #full-events .all-event-content .overlay .caption h4 {
+        font-size: 1.5rem;
+        font-family: "Cocomat", sans-serif;
+        color: #D0A245; }
+#full-events .all-categories {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Cocomat", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  background: #F7F7F2; }
+  #full-events .all-categories a {
+    color: #923556;
+    padding: 20px 15px;
+    transition: all .5s; }
+    #full-events .all-categories a:hover {
+      background: #923556;
+      color: #fff;
+      text-decoration: none; }
+    #full-events .all-categories a:first-child {
+      margin-left: 0; }
+
 .single-event {
   margin-top: 50px;
   background: #F7F7F2; }
   .single-event .event-title {
-    margin-bottom: 15px;
-    padding: 30px 0; }
+    padding: 30px 0 15px 0; }
     .single-event .event-title h1 {
       text-transform: uppercase;
       font-family: "Cocomat", sans-serif;
       font-size: 2.5rem;
       color: #D0A245; }
-  .single-event .event-date p {
-    font-family: "Nunito-light", sans-serif;
-    color: rgba(53, 50, 47, 0.8);
-    font-size: 1.1rem;
-    margin-bottom: 10px; }
-  .single-event .event-content p {
-    white-space: pre-wrap;
-    line-height: 1.3;
-    color: rgba(53, 50, 47, 0.8);
-    font-family: "Nunito-light", sans-serif;
-    font-size: 1.1rem; }
-  .single-event #slider .slick-prev::before {
-    content: "‹";
-    font-size: 3rem;
-    opacity: 0.8;
-    padding: 0px 20px 10px 20px;
-    border-radius: 100%;
-    background: #F7F7F2;
-    color: #923556;
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    left: 6%;
-    transform: translate(-50%, -50%);
-    cursor: pointer; }
-  .single-event #slider .slick-arrow:hover {
-    background-color: #923556; }
-  .single-event #slider .slick-next::before {
-    content: "›";
-    font-size: 3rem;
-    opacity: 0.8;
-    padding: 0px 20px 10px 20px;
-    border-radius: 100%;
-    background: #F7F7F2;
-    color: #923556;
-    position: absolute;
-    z-index: 1000;
-    top: 50%;
-    left: 94%;
-    transform: translate(-50%, -50%);
-    cursor: pointer; }
+  .single-event .event-type {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between; }
+    .single-event .event-type h3 {
+      font-family: "Cocomat", sans-serif;
+      font-style: italic;
+      color: rgba(53, 50, 47, 0.8); }
+    .single-event .event-type h2 {
+      font-family: "Cocomat", sans-serif;
+      font-style: italic;
+      color: rgba(53, 50, 47, 0.8); }
+    .single-event .event-type span {
+      font-family: "Cocomat", sans-serif;
+      color: #C84876; }
+  .single-event .event-date {
+    background: #923556;
+    padding: 20px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+    .single-event .event-date p {
+      text-align: center;
+      font-family: "Nunito-light", sans-serif;
+      color: #F7F7F2;
+      font-size: 1.1rem; }
+  .single-event .event-content {
+    background-color: #fff;
+    padding: 20px 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    .single-event .event-content p {
+      white-space: pre-wrap;
+      line-height: 1.5;
+      color: #923556;
+      font-family: "Nunito-light", sans-serif; }
   .single-event #slider .slides {
-    height: 600px; }
+    width: auto;
+    height: 500px; }
     .single-event #slider .slides img {
-      width: 100%;
+      margin: 0 auto;
+      display: block;
+      width: auto;
       height: 100%; }
 
 @media (max-width: 768px) {

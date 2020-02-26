@@ -9,10 +9,11 @@ $('.hero-carousel').slick({
   });
 
 $('#slider').slick({
-    dots: false,
-    arrows: true,
-    nextArrow: '<div class="slick-next"></div>',
-    prevArrow: '<div class="slick-prev"></div>',
+    dots: true,
+    // dotsClass: 'my-dots',
+    arrows: false,
+    // nextArrow: '<div class="slick-next"></div>',
+    // prevArrow: '<div class="slick-prev"></div>',
     infinite: true,
     autoplay: true,
     speed: 500,

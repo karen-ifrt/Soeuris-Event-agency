@@ -37,7 +37,7 @@
 
 <div class="banniere-home">
     <div class="banniere-home-content">
-        <p>Créatrices d'événements magiques</p>
+        <p><?php the_field('titre_hero'); ?></p>
     </div>
 </div>
 
