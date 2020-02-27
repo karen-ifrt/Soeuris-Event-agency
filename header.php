@@ -37,7 +37,7 @@
             <nav>
                 <a href="<?php echo home_url('/'); ?>">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_2.jpg" alt="Soeur'is sur le gateau" class="logo">
+                    <!-- <img src="<?php // echo get_template_directory_uri(); ?>/assets/img/logo_2.jpg" alt="Soeur'is sur le gateau" class="logo"> -->
                 </a>
 
                 <div class="menu-desktop">

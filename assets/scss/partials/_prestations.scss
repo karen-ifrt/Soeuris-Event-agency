@@ -1,0 +1,38 @@
+#prestations {
+    margin-top: 100px;
+
+    .prestation-block {
+        height: 200px;
+        margin-bottom: 30px;
+        position: relative;
+
+        .image-prestation {
+            position: relative;
+        }
+
+        .text-overlay {
+            background: $degrade4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            h2 {
+                text-transform: uppercase;
+                font-family: $font1;
+                color: #fff;
+                font-size: 1.1rem;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 0.9rem;
+                color: $degrade5;
+                font-family: $fontlight;
+            }
+    }
+}
+}

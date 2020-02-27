@@ -26,10 +26,7 @@
                         <p>
                             <?php the_field('descr_birthdays', "option"); ?>
                         </p>
-                    </div>
-                    <div class="more">
-                        <a href="#">En savoir plus</a>
-                    </div>                    
+                    </div>                 
                 </div>
             </div>
             <div class="col-md-3">
@@ -52,10 +49,7 @@
                         <p>
                             <?php the_field('descr_family', "option"); ?>
                         </p>
-                    </div>
-                    <div class="more">
-                        <a href="#">En savoir plus</a>
-                    </div>                     
+                    </div>               
                 </div>
             </div>
             <div class="col-md-3">
@@ -78,10 +72,7 @@
                         <p>
                             <?php the_field('descr_ateliers', "option"); ?>
                         </p>
-                    </div>
-                    <div class="more">
-                        <a href="#">En savoir plus</a>
-                    </div>                   
+                    </div>                 
                 </div>
             </div>
             <div class="col-md-3">
@@ -104,10 +95,7 @@
                         <p>
                             <?php the_field('descr_location', "option"); ?>
                         </p>
-                    </div>
-                    <div class="more">
-                        <a href="#">En savoir plus</a>
-                    </div>    
+                    </div> 
                 </div>
             </div>
         </div>

@@ -32,23 +32,6 @@
             line-height: 1.2;
             height: 115px;
         }
-        .more {
-            margin-top: 30px;
-            a {
-                font-family: $font2;
-                text-transform: uppercase;
-                padding: 10px 15px;
-                border: 1px solid $color6;
-                color: $color6;
-                border-radius: 3px;
-                transition: all .5s;
-                &:hover {
-                    text-decoration: none;
-                    background: $color6;
-                    color: $color5;
-                }
-            }
-        }
     }
 }
 

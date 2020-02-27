@@ -50,8 +50,10 @@
             width: 50%;
             padding: 0 20px;
         .home-block-title {
-            font-family: $font3;
-            font-size: 2rem;
+            font-family: $font1;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.2rem;
             margin-bottom: 15px;
             color: $color7;
             margin-top: 30px;
@@ -107,10 +109,9 @@
         display: flex;
         justify-content: center;
         p {
-            font-family: $font1;
+            font-family: $font3;
             color: $color6;
-            font-size: 2.5rem;
-            margin-bottom: 15px;
+            font-size: 3.5rem;
         }
     }
 }

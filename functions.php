@@ -34,6 +34,7 @@ if (function_exists('add_image_size')) {
     add_image_size('custom-size-home', 300, 300, true);
     add_image_size('custom-event', 400, 220, true);
     add_image_size('carousel-events', 500, 800, false);
+    add_image_size('custom-prestations', 540, 200, true);
 }
 
 // ACF Options

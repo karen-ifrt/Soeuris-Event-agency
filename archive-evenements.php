@@ -7,11 +7,11 @@
             <div class="all-categories">
                 <a href="#" class="filter-category" data-toggle="portfilter" data-target="all">Tout</a>
                 <?php
-                $terms = get_terms("category"); // Consigue todas las categorias del custom taxonomy.
+                $terms = get_terms("category");
                 $termsString .=  $term->slug;
-                $count = count($terms); //Cuantos categorias son?
-                if ($count > 0) {  //Si es que hay mas de uno
-                    foreach ($terms as $term) {  //Para cada termino:
+                $count = count($terms);
+                if ($count > 0) {
+                    foreach ($terms as $term) {
                         echo "<a href='#' class='filter-category' data-toggle='portfilter' data-target='" . $term->slug . "'>" . $term->name . "</a>\n";
                     }
                 }
@@ -34,27 +34,24 @@
                     <div class="col-md-3 mb-5" data-tag="<?php echo $terms_portfolio[0]->slug; ?>">
                         <div class="all-event-content">
                             <a href="<?php the_permalink(); ?>">
-                            <div class="event-first-pic">
-                                <?php $images = get_field('gallery');
-                                $image_url = $images[0]['sizes']['custom-size'];
-                                ?>
-                                <?php if ($images) : ?>
-                                        <img src="<?php echo $image_url; ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <div class="event-first-pic">
+                                    <?php $images = get_field('gallery');
+                                    $image_url = $images[0]['sizes']['custom-size'];
+                                    ?>
+                                    <?php if ($images) : ?>
+                                        <img src="<?php echo $image_url; ?>" alt="<?php echo $images[0]['title']; ?>" />
+                                </div>
+                            <?php endif; ?>
+                            <div class="overlay">
+                                <div class="caption">
+                                    <h4><?php the_title(); ?></h4>
+                                </div>
                             </div>
-                        <?php endif; ?>
-                        <div class="overlay">
-                        <div class="caption">
-                                <h4><?php the_title(); ?></h4>
-                        </div>
-                        </div>
-                    </a>
+                            </a>
                         </div>
                     </div>
                 <?php endwhile; ?>
             <?php else : ?>
-                <div class="alert alert-danger text-center">
-                    <p>Pas d'événement</p>
-                </div>
             <?php endif; ?>
         </div>
     </div>
