@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="prestations">
-
+<h1>Nos prestations</h1>
     <div class="container">
         <div class="row">
             <div class="col-md-6">

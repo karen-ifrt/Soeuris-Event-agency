@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+
+.contact-content {
+
+    .all-formulaire-info {
+        display: block;
+        margin-left: 30px;
+
+        .formulaire-tel {
+            justify-content: flex-start;
+        }
+        .formulaire-mail {
+            margin-top: 10px;
+            justify-content: flex-start;
+            margin-left: 0;
+        }
+    }
+
+    .all-formulaire-deux {
+        display: block;
+        margin-top: 10px;
+        margin-left: 30px;
+
+        .formulaire-adresse {
+            justify-content: flex-start;
+        }
+
+        .formulaire-reseaux {
+            margin-top: 10px;
+            margin-left: 0;
+            display: flex;
+            justify-content: flex-start;
+
+            .formulaire-facebook {
+                margin-right: 15px;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .formulaire {
+        p {
+            display: block;
+            
+        }
+        
+    }
+}
+}

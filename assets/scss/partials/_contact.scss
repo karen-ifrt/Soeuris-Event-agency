@@ -1,0 +1,208 @@
+.contact-content {
+    h1 {
+        text-align: center;
+        background-color: $color5;
+        font-family: $font3;
+        font-size: 3.5rem;
+        color: $color6;
+        padding: 20px 0;
+    }
+
+    // Infos formulaire
+    .all-formulaire-info {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $fontlight;
+        color: $degrade2;
+
+        a {
+            color: inherit;
+            transition: all .5s;
+            &:hover {
+                text-decoration: none;
+                color: $color6;
+            }
+        }
+
+        .formulaire-tel {
+            display: flex;
+            align-items: center;
+            .telephone-img {
+                margin-right: 15px;
+            }
+        }
+
+        .formulaire-mail {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            .mail-img {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .all-formulaire-deux {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $fontlight;
+        color: $degrade2;
+
+        .formulaire-adresse {
+            display: flex;
+            align-items: center;
+            .adresse-img {
+                margin-right: 15px;
+            }
+            p {
+                white-space: pre-wrap;
+                line-height: 1.3;
+            }
+        }
+        .formulaire-reseaux {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+
+            .formulaire-facebook {
+                margin: 0 15px;
+            }
+            .all-social {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .divider {
+        height: 2px;
+        width: 300px;
+        background: $color2;
+        margin: 30px auto 0 auto;
+    }
+
+    // Description de formulaire
+    .formulaire-description {
+        margin: 30px 0;
+
+        p {
+            text-align: center;
+            white-space: pre-wrap;
+            font-family: $fontlight;
+            color: $degrade2;
+            font-size: 1.1rem;
+            line-height: 1.3;
+        }
+    }
+
+    // Formulaire de contact
+    .formulaire {
+        font-family: $font2;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+            p {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                input {
+                    width: 95%;
+                    text-align: center;
+                }
+            }
+    
+        label {
+            font-family: $font1;
+            margin-bottom: 15px;
+            color: $color2;
+            input {
+                padding: 5px;
+                font-family: $font2;
+                margin-top: 8px;
+                border: 1px solid $color1;
+                background: $color1; 
+                color: $color2;               
+                &:focus {
+                    outline: 0;
+                    background: $color1;                
+                    box-shadow: none;
+                    color: $color2;
+                }
+            }
+            select {
+                padding: 5px;
+                font-family: $font2;
+                margin-top: 8px;
+                border: 1px solid $color1;
+                background: $color1;                
+                color: $color2;               
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                    background: $color1;                
+                    color: $color2;               
+                    background: $color1;
+                }
+                option {
+                    font-family: $font2;
+                    &:focus {
+                        background: $color1;
+                    }
+                }
+            }
+            textarea {
+                resize: none;
+                padding: 5px;
+                font-family: $font2;
+                margin-top: 8px;
+                border: 1px solid $color1;
+                background: $color1;                
+                color: $color2;               
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                    background: $color1;                
+                    color: $color2;               
+                }
+            }
+
+            
+        }
+                .wpcf7-not-valid-tip {
+                    margin-top: 5px;
+                    font-size: 0.8rem;
+                    font-family: $font2;
+                    text-transform: none;
+                }
+    
+                .wpcf7-response-output, .wpcf7-validation-errors {
+                    border: none;
+                    color: red;
+                    text-transform: none;
+                    font-family: $font2;
+                }
+
+        .wpcf7-submit {
+            width: 100px;
+            background: $color2;
+            color: $color5;
+            text-transform: uppercase;
+            padding: 10px;
+            border: 1px solid $color2;
+            border-radius: 2px;
+            transition: all .5s;
+            &:hover {
+                background: $color5;
+                color: $color2;
+            }
+        }
+    }
+}

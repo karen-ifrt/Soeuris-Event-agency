@@ -37,7 +37,7 @@
 
 <div class="banniere-home">
     <div class="banniere-home-content">
-        <p><?php the_field('titre_hero'); ?></p>
+        <h1><?php the_field('titre_hero'); ?></h1>
     </div>
 </div>
 
@@ -87,7 +87,7 @@
                         </div>
                         <div class="home-block-descr">
                             <p><?php the_field('description_2'); ?>
-                    </p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                         </div>
                         <div class="home-block-descr">
                             <p><?php the_field('description_3'); ?>
-                    </p>
+                            </p>
                         </div>
                     </div>
                     <div class="home-block-img">
@@ -126,7 +126,7 @@
                         </div>
                         <div class="home-block-descr">
                             <p><?php the_field('description_4'); ?>
-                    </p>
+                            </p>
                         </div>
                     </div>
                     <div class="home-block-img">
@@ -148,8 +148,27 @@
 
 <div class="banniere-home">
     <div class="banniere-home-content">
-        <p>Nos derniers événements</p>
+        <h2>Nos derniers événements</h2>
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+
+        <?php
+        $args = array(
+            'post_type' => 'evenements',
+            'numberposts' => 3,
+            'order' => 'DESC',
+        );
+        $recent_posts = wp_get_recent_posts($args);
+        foreach( $recent_posts as $recent ){
+            echo '<div class="col-md-4"><li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li></div> ';
+        }
+        wp_reset_query();
+    ?>
+    </div>
+</div>
+
 
 <?php get_footer(); ?>

@@ -1,38 +1,3 @@
-.hero {
-    font-family: $font1;
-    // background-image: url('assets/img/bg_home_2.jpg');
-    background-size: cover;
-    height: 500px;
-    position: relative;
-    .encard-hero{
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-    }
-    .img-content {
-        margin-top: 50px;
-            width: 700px;
-            padding: 50px;
-            background: #fff;
-            opacity: 0.7;
-            text-align: center;
-            border-radius: 3px;
-            h1 {
-                font-size: 1.8rem;
-                margin-bottom: 15px;
-                font-weight: bold;
-                color: $color2;
-                text-transform: uppercase;
-            }
-            h2 {
-                font-size: 1.5rem;
-                line-height: 1.3;
-            }
-    }
-}
-
 
 .home-blocks {
     padding: 50px 0;
@@ -56,7 +21,7 @@
             font-size: 1.2rem;
             margin-bottom: 15px;
             color: $color7;
-            margin-top: 30px;
+            margin-top: 40px;
         }
         .home-block-descr {
             font-family: $fontlight;
@@ -108,7 +73,7 @@
     .banniere-home-content {
         display: flex;
         justify-content: center;
-        p {
+        h1, h2 {
             font-family: $font3;
             color: $color6;
             font-size: 3.5rem;

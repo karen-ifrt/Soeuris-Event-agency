@@ -16,13 +16,19 @@ Version: 1.0
 @import "assets/scss/partials/agence.scss";
 @import "assets/scss/partials/wwd.scss";
 @import "assets/scss/partials/events.scss";
+@import "assets/scss/partials/contact.scss";
 @import "assets/scss/partials/prestations.scss";
 @import "assets/scss/responsive/resetbootstrap.scss";
 @import "assets/scss/responsive/home.scss";
 @import "assets/scss/responsive/header.scss";
 @import "assets/scss/responsive/events.scss";
+@import "assets/scss/responsive/contact.scss";
 
 body {
     overflow-x: hidden;
 }
 
+::selection {
+    color: #fff;
+    background: $color7;
+}

@@ -2,6 +2,8 @@
 
 <section id="full-events">
 
+    <h1>Nos réalisations</h1>
+
     <div class="container">
         <div class="row">
             <div class="all-categories">
@@ -25,6 +27,7 @@
                 'post_type' => 'evenements',
                 'order' => 'DESC',
             ));
+
 
             if ($portfolio_query->have_posts()) :
                 while ($portfolio_query->have_posts()) : $portfolio_query->the_post();

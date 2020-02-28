@@ -1,13 +1,25 @@
 #prestations {
-    margin-top: 100px;
+    h1 {
+        text-align: center;
+        background-color: $color5;
+        font-family: $font3;
+        font-size: 3.5rem;
+        color: $color6;
+        padding: 20px 0;
+        margin-bottom: 50px;
+    }
 
     .prestation-block {
-        height: 200px;
+        height: auto;
         margin-bottom: 30px;
         position: relative;
 
         .image-prestation {
             position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         .text-overlay {
@@ -30,8 +42,11 @@
             }
             p{
                 font-size: 0.9rem;
+                line-height: 1.2;
                 color: $degrade5;
                 font-family: $fontlight;
+                width: 80%;
+                white-space: pre-wrap;
             }
     }
 }
