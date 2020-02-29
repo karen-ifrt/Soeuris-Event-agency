@@ -1,0 +1,18 @@
+footer {
+    background: $color2;
+    font-family: $fontlight;
+    padding: 40px 0;
+    font-size: 0.8rem;
+    color: $color5;
+    .all-footer {
+        .block-footer {
+            line-height: 1.6;
+            .contact-footer {
+                display: flex;
+                .mail-footer {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

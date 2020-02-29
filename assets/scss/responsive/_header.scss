@@ -20,24 +20,124 @@
             }
         }
     
-        .menu-desktop {
+        .desktop-nav {
             display: none;
-        }
-        .burger-mobile {
-            display: block;
-            margin-right: 20px;
         }
 
         .menu-mobile {
-            display: block;
-            z-index: 1000;
-            top: 150px;
-            background: #333;
-            position: absolute;
-            height: 100vh;
-            width: 100vw;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+                .burger-mobile {
+                    position: absolute;
+                    cursor: pointer;
+                    z-index: 1000;
+                    right: 15px;
+                }
+
+                .contact-nav {
+                    position: absolute;
+                    top: 100px;
+                    display: flex;
+                    text-align: center;
+                    .phone {
+                        display: flex;
+                    }
+                    .home {
+                        display: flex;
+                    }
+                }
+
+                .responsive-social {
+                    display: flex;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+
+                    .facebook-responsive {
+                        margin-right: 10px;
+                    }
+                }
+
+                .contact-nav {
+                    font-family: $font2;
+                    font-size: 0.9rem;
+                    text-transform: none;
+                    color: $degrade2;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    top: 75%;
+                    left: 50%;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                    .phone {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .home {
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .menu-main-container {
+                    font-family: $font1;
+                    text-align: center;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    li {
+                        margin-bottom: 20px;
+                        a {
+                            color: $color2;
+                            &:hover {
+                                text-decoration: none;
+                                color: $color6;
+                            }
+                        }
+                    }
+                }
+                
+
+            }
+            
+    
+    }
+    
+// Footer
+
+footer {
+    .all-footer {
+        text-align: center;
+        .block-footer {
+            line-height: 1.6;
+            .contact-footer {
+                display: block;
+                .mail-footer {
+                    margin-left: 0;
+                }
+            }
         }
     }
+}
+.content-menu {
+    position: fixed;
+    top: -200%;
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+    background-color: $color1;
+    transition: all .7s ease-in-out;
+}
 
 
  }

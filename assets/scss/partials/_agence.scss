@@ -1,11 +1,13 @@
 .agence {
     background-color: $color5;
-    padding: 50px 0;
     h2 {
+        text-align: center;
+        background-color: $color5;
         font-family: $font3;
-        font-size: 2.8rem;
-        color: $color2;
-        margin-bottom: 40px;
+        font-size: 3.5rem;
+        color: $color6;
+        padding: 20px 0;
+        margin-bottom: 50px;
     }
 
     .agence-content {
