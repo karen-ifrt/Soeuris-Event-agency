@@ -230,6 +230,53 @@ footer {
       color: #D0A245;
       font-size: 3.5rem; }
 
+.recent-block {
+  text-align: center;
+  margin: 30px 0; }
+  .recent-block a:hover {
+    text-decoration: none; }
+  .recent-block .event-first-pic {
+    position: relative; }
+  .recent-block .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    opacity: 0.7; }
+    .recent-block .overlay .caption {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      margin: 0 auto; }
+      .recent-block .overlay .caption h4 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        font-weight: bold;
+        font-family: "Cocomat", sans-serif;
+        color: #D0A245; }
+
+.btn-all-events {
+  text-align: center;
+  margin: 15px 0 30px 0; }
+  .btn-all-events a {
+    font-family: "Cocomat", sans-serif;
+    text-transform: uppercase;
+    background: #923556;
+    color: #F7F7F2;
+    padding: 6px 10px 8px 10px;
+    border: 1px solid #923556;
+    border-radius: 2px;
+    transition: all .5s; }
+    .btn-all-events a:hover {
+      text-decoration: none;
+      background: #F7F7F2;
+      color: #923556; }
+
 .agence {
   background-color: #F7F7F2; }
   .agence h2 {

@@ -156,19 +156,48 @@
     <div class="row">
 
         <?php
-        $args = array(
+        $new_loop = new WP_Query(array(
             'post_type' => 'evenements',
-            'numberposts' => 3,
-            'order' => 'DESC',
-        );
-        $recent_posts = wp_get_recent_posts($args);
-        foreach( $recent_posts as $recent ){
-            echo '<div class="col-md-4"><li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li></div> ';
-        }
-        wp_reset_query();
-    ?>
+            'posts_per_page' => 3 // put number of posts that you'd like to display
+        ));
+        ?>
+        <?php if ($new_loop->have_posts()) : ?>
+            <?php while ($new_loop->have_posts()) : $new_loop->the_post(); ?>
+            <div class="col-md-4">
+                <div class="recent-block">
+
+                    <a href="<?php the_permalink(); ?>">
+
+                        <div class="event-first-pic">
+                            <?php $images = get_field('gallery');
+                            $image_url = $images[0]['sizes']['custom-size'];
+                            ?>
+                            <?php if ($images) : ?>
+                                <img src="<?php echo $image_url; ?>" alt="<?php echo $images[0]['title']; ?>" />
+                        </div>
+                        <div class="overlay">
+                                <div class="caption">
+                                    <h4><?php the_title(); ?></h4>
+                                </div>
+                            </div>
+                    <?php endif; ?>
+                            </a>
+                </div>
+            </div>
+
+            <?php endwhile; ?>
+        <?php else : ?>
+        <?php endif; ?>
+        <?php wp_reset_query(); ?>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="btn-all-events">                
+                <a href="<?php echo get_post_type_archive_link ( 'evenements' ); ?>">Toutes nos réalisations</a>
+
+            </div>
+        </div>
     </div>
 </div>
-
 
 <?php get_footer(); ?>
