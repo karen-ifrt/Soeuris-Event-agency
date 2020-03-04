@@ -1,16 +1,21 @@
+
 .contact-content {
+
     h1 {
         text-align: center;
         background-color: $color5;
         font-family: $font3;
         font-size: 3.5rem;
         color: $color6;
-        padding: 20px 0;
+        padding: 50px 0;
     }
+
+    .all-container {
+
+        background: $color5;
 
     // Infos formulaire
     .all-formulaire-info {
-        margin-top: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -206,4 +211,5 @@
             }
         }
     }
+}
 }

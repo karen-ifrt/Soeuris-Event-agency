@@ -68,9 +68,22 @@
 }
 
 .banniere-home {
+    padding-top: 50px;
+    .banniere-home-content {
+        display: flex;
+        justify-content: center;
+        h1, h2 {
+            font-family: $font3;
+            color: $color6;
+            font-size: 3.5rem;
+        }
+    }
+}
+
+.banniere-event {
     background: $color5;
     padding: 30px;
-    .banniere-home-content {
+    .banniere-event-content {
         display: flex;
         justify-content: center;
         h1, h2 {
@@ -83,9 +96,11 @@
 
 // Derniers événements
 
+.home-events {
+    background: $color5;
+
 .recent-block {
     text-align: center;
-    margin: 30px 0;
 
     a {
         &:hover {
@@ -103,7 +118,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: #fff;
+        background: $color5;
         overflow: hidden;
         opacity: 0.7;
         .caption {
@@ -123,11 +138,11 @@
         
         }
     }
-}
 
+}
 .btn-all-events {
     text-align: center;
-    margin: 15px 0 30px 0;
+    margin: 50px 0;
     a {
         font-family: $font1;
         text-transform: uppercase;
@@ -144,4 +159,42 @@
             color: $color2;
         }
     }
+}
+}
+
+// Ateliers à venir
+
+.home-atelier {
+    padding: 50px 0;
+    .titre-atelier {
+        display: flex;
+        justify-content: center;
+
+        h3 {
+            font-family: $font3;
+            color: $color6;
+            font-size: 3.5rem;
+        }
+    }
+
+    .atelier-entete {
+        margin-top: 20px;
+        text-align: center;
+        p {
+            font-family: $fontlight;
+            color: $degrade2;
+            white-space: pre-wrap;
+        }
+    }
+
+    .atelier-list {
+        margin-top: 20px;
+        text-align: center;
+        p {
+            font-family: $font2;
+            color: $degrade2;
+            white-space: pre-wrap;
+        }
+    }
+
 }

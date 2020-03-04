@@ -35,6 +35,8 @@ if (function_exists('add_image_size')) {
     add_image_size('custom-event', 400, 220, true);
     add_image_size('carousel-events', 500, 800, false);
     add_image_size('custom-prestations', 540, 200, true);
+    add_image_size('custom-agence', 350, 400, true);
+    add_image_size('custom-ateliers', 550, 400, true);
 }
 
 // ACF Options

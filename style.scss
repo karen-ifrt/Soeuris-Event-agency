@@ -23,10 +23,12 @@ Version: 1.0
 @import "assets/scss/responsive/home.scss";
 @import "assets/scss/responsive/header.scss";
 @import "assets/scss/responsive/events.scss";
+@import "assets/scss/responsive/agence.scss";
 @import "assets/scss/responsive/contact.scss";
 
 body {
     overflow-x: hidden;
+    margin-top: 80px;
 }
 
 ::selection {

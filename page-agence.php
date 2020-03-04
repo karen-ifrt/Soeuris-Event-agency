@@ -1,17 +1,33 @@
 <?php get_header(); ?>
 
 <div class="agence">
-    <h2><?php the_field('titre_agence'); ?></h2>
+    <h2><?php the_field('titre_presentation_agence', 'options') ?></h2>
 
     <div class="container">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="agence-img">
+                <?php
+                        $image = get_field('photo_equipe', "options");
+                        $size = 'custom-agence';
+                        $thumb = $image['sizes'][$size];
 
-                <div class="agence-content">
-                    <?php the_content(); ?>
+                        if ($image) { ?>
+                            <img src="<?php echo $thumb; ?>" alt="<?php echo $image['title']; ?>" />
+                        <?php
+                        }
+                        ?>
                 </div>
+            </div>
 
-        <?php endwhile;
-        endif; ?>
+            <div class="col-md-8">
+                <div class="agence-content">
+                    <p><?php the_field('description_agence', 'options'); ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 

@@ -3,7 +3,12 @@ header {
     background-color: #fff;
     opacity: 1;
     width: 100%;
-
+    box-shadow: 1px 1px 5px grey;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
     .menu-mobile {
         display: none;
     }
@@ -52,6 +57,7 @@ header {
             }
         }
     }
+
     .desktop-nav {
         display: flex;
         align-items: center;
@@ -114,7 +120,31 @@ header {
         }
         
     }
+
     }
 
 
 
+    #myBtn {
+        display: block;
+        position: fixed;
+        bottom: -100px;
+        right: 50px;    
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: $color1;
+        cursor: pointer;
+        padding: 8px 15px;
+        border-radius: 100%;
+        transition: all .5s ease-in-out;
+      }
+      
+      #myBtn img {
+        width: 20px;
+        height: auto;
+      }
+
+      #myBtn:hover {
+        background-color: $color7;
+      }

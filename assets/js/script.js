@@ -243,3 +243,19 @@ burger.addEventListener('click', () => {
     menu_mobile.classList.toggle('transi-mobile-menu');
     
 });
+
+
+// Bouton retour en haut
+
+mybutton = document.getElementById("myBtn");
+window.addEventListener("scroll", function () {
+    if (document.documentElement.scrollTop > 200) {
+        mybutton.style.bottom = "80px";
+    } else {
+        mybutton.style.bottom = "-100px";
+    }
+});
+
+function topFunction() {
+    $("html").animate({ scrollTop: "0" }, "600");
+}

@@ -2,6 +2,18 @@
     .banniere-home {
         text-align: center;
     }
+    .banniere-event {
+        text-align: center;
+    }
+
+    .recent-block {
+        margin-top: 50px;
+        .event-first-pic {
+            img {
+                width: 100%;
+            }
+        }
+    }
 
     .container {
         padding-left: 0;

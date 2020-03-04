@@ -6,15 +6,23 @@
         font-family: $font3;
         font-size: 3.5rem;
         color: $color6;
-        padding: 20px 0;
-        margin-bottom: 50px;
+        padding: 50px 0;
+    }
+
+    .agence-img {
+        img {
+            border-radius: 5px;
+        }
     }
 
     .agence-content {
         font-family: $fontlight;
         line-height: 1.7;
         color: $degrade2;
+        padding-bottom: 20px;
         p {
+            text-align: justify;
+            white-space: pre-wrap;
             margin-bottom: 20px;
         }
     }

@@ -86,3 +86,5 @@
             </div>
         </nav>
     </header>
+
+    <button onclick="topFunction()" id="myBtn"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-up.svg" alt="Revenir en haut de la page"></button>

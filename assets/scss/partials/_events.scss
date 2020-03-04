@@ -4,12 +4,10 @@
 
     h1 {
         text-align: center;
-        background-color: $color5;
         font-family: $font3;
         font-size: 3.5rem;
         color: $color6;
-        padding: 20px 0;
-        margin-bottom: 50px;
+        padding: 50px 0;
     }
 
     .all-event-content {
@@ -75,7 +73,6 @@
         text-transform: uppercase;
         font-family: $font1;
         font-size: 0.9rem;
-        margin-top: 20px;
         background: $color5;
 
         a {
