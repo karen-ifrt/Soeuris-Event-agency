@@ -73,7 +73,7 @@ header {
 
                 .current-menu-item {
                     a {
-                        color: $color7;
+                        color: $color2;
                         &:before {
                             transition: all .3s;
                             content: '';
@@ -82,7 +82,7 @@ header {
                             position: absolute;
                             bottom: -10px;
                             left: 50%;
-                            background-color: $color7;
+                            background-color: $color2;
                             transform: translateX(-50%);
                         }
                     }
@@ -129,7 +129,7 @@ header {
         display: block;
         position: fixed;
         bottom: -100px;
-        right: 50px;    
+        right: 30px;    
         z-index: 99;
         border: none;
         outline: none;

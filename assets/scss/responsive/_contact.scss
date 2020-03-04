@@ -2,9 +2,7 @@
 
 .contact-content {
 
-    .formulaire-description {
-        padding: 0 5px;
-    }
+.all-container {
 
     .all-formulaire-info {
         display: block;
@@ -43,11 +41,19 @@
     }
 
     .formulaire {
+        textarea {
+            width: 100%;
+        }
         p {
             display: block;
             
         }
         
     }
+
+    .formulaire-description {
+        padding: 0 5px;
+    }
+}
 }
 }

@@ -1,9 +1,17 @@
 <?php get_header(); ?>
 
 
+
+
 <section class="single-event">
     <div class="container">
-
+    <?php
+if ( function_exists('yoast_breadcrumb') ) {
+yoast_breadcrumb('
+<p id="breadcrumbs">','</p>
+');
+}
+?>
         <div class="event-title">
             <h1><?php the_title(); ?></h1>
         </div>
