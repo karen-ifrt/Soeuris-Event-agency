@@ -60,6 +60,14 @@
                     font-family: $font1;
                     color: $color6;
                 }
+
+                .plus {
+                    width: 30px;
+                    margin: 30px auto 0 auto;
+                    img {
+                        width: 100%;
+                    }                    
+                }
             
             }
         }
@@ -74,6 +82,7 @@
         font-family: $font1;
         font-size: 0.9rem;
         background: $color5;
+        margin-bottom: 20px;
 
         a {
             color: $color2;
