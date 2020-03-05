@@ -1,7 +1,6 @@
 @media (max-width: 768px) {
     
     .agence {
-
         .agence-img {
             text-align: center;
         }
@@ -9,6 +8,21 @@
         .agence-content {
             padding: 0 5px;
         }
+
+    }
+
+ }
+
+
+ @media (max-width: 992px) {
+
+
+    .agence {
+
+        .row {
+            flex-direction: column;
+        }
+
     }
 
  }

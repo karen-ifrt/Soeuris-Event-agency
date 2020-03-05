@@ -7,16 +7,16 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="agence-img">
-                <?php
-                        $image = get_field('photo_equipe', "options");
-                        $size = 'custom-agence';
-                        $thumb = $image['sizes'][$size];
+                    <?php
+                    $image = get_field('photo_equipe', "options");
+                    $size = 'custom-agence';
+                    $thumb = $image['sizes'][$size];
 
-                        if ($image) { ?>
-                            <img src="<?php echo $thumb; ?>" alt="<?php echo $image['title']; ?>" />
-                        <?php
-                        }
-                        ?>
+                    if ($image) { ?>
+                        <img src="<?php echo $thumb; ?>" alt="<?php echo $image['title']; ?>" />
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
 
