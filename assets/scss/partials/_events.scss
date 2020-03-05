@@ -102,6 +102,80 @@
 }
 
 
+// Pagination archive articles
+
+.pagination {
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: $fontlight;
+    .screen-reader-text {
+        display: none;
+    }
+
+    .nav-links {
+        span.current {
+            background:$color2;
+            color: #ffffff;
+            border: 1px solid $color2;
+        }
+
+        .page-numbers {
+            border-radius: 2px;
+            padding: 8px;
+            background: $color5;
+            color: $color2;
+            transition: all .5s;
+            border: 1px solid $color5;
+            margin-right: 10px;
+
+            &:hover {
+                background:$color2;
+                color: #fff;
+                text-decoration: none;
+                border: 1px solid $color2;
+            }
+        }
+    }
+}
+
+// Pagination single article
+
+.site__navigation {
+    font-family: $fontlight;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 50px;
+
+    .site__navigation__next {
+        padding-left: 5px;
+        color: $degrade2;
+        a {
+            padding-top: 10px;
+            color: $color2;
+            text-transform: uppercase;
+            &:hover {
+                text-decoration: none;
+                color: $color7;
+            }
+        }
+    }
+    .site__navigation__prev {
+        color: $degrade2;
+        padding-right: 5px;
+
+        a {
+            padding-top: 10px;
+            color: $color2;
+            text-transform: uppercase;
+            &:hover {
+                text-decoration: none;
+                color: $color7;
+            }
+        }
+    }
+}
+
 
 // SINGLE EVENT
 

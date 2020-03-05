@@ -230,15 +230,25 @@ yoast_breadcrumb('
                     </div>
 
                 </div>
-    </div>
 <?php endwhile; ?>
 
 
 <?php
         }
 ?>
+
+<div class="site__navigation">
+    <div class="site__navigation__next">
+        <?php next_post_link( 'Événement précédent<br>%link' ); ?> 
+    </div>
+    <div class="site__navigation__prev">
+		<?php previous_post_link( 'Événement suivant<br>%link' ); ?>
+    </div>
+</div>
+</div>
 </div>
 
 </section>
+
 
 <?php get_footer(); ?>

@@ -23,14 +23,8 @@
         <br />
         <div class="row">
             <?php
-            $portfolio_query = new WP_Query(array(
-                'post_type' => 'evenements',
-                'order' => 'DESC',
-            ));
-
-
-            if ($portfolio_query->have_posts()) :
-                while ($portfolio_query->have_posts()) : $portfolio_query->the_post();
+            if (have_posts()) :
+                while (have_posts()) : the_post();
                     $terms_portfolio = get_the_terms(get_the_ID(), 'category');
             ?>
 
@@ -62,4 +56,8 @@
         </div>
     </div>
 </section>
+
+<?php the_posts_pagination(); ?>
+
+
 <?php get_footer(); ?>
