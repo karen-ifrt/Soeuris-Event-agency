@@ -31,6 +31,10 @@ body {
     margin-top: 100px;
 }
 
+.overflow-hidden {
+    overflow-x: hidden;
+}
+
 ::selection {
     color: #fff;
     background: $color7;

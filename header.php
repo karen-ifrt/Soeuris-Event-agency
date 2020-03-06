@@ -10,6 +10,7 @@
 
 <body <?php body_class(); ?>>
 
+<div class="overflow-hidden">
     <header>
         <div class="social-nav">
             <div class="container">
