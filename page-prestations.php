@@ -4,7 +4,7 @@
 <h1>Nos prestations</h1>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
                         <?php
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-right-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
                         <?php
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
                         <?php
@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-right-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
                         <?php
@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
                         <?php
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-right-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
 
@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
                         <?php
@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-right-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
                         <?php
@@ -175,7 +175,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
                         <?php
@@ -195,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-right-1">
                 <div class="prestation-block">
                     <div class="image-prestation">
                         <?php

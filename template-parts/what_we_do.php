@@ -6,7 +6,7 @@
 
 <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 reveal-1">
                 <div class="block-content">
                     <div class="block-img">
                         <?php
@@ -29,7 +29,7 @@
                     </div>                 
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 reveal-1">
                 <div class="block-content">
                     <div class="block-img">
                         <?php
@@ -52,7 +52,7 @@
                     </div>               
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 reveal-right-1">
                 <div class="block-content">
                     <div class="block-img">
                         <?php
@@ -75,7 +75,7 @@
                     </div>                 
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 reveal-right-1">
                 <div class="block-content">
                     <div class="block-img">
                         <?php

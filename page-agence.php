@@ -5,7 +5,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 reveal-1">
                 <div class="agence-img">
                     <?php
                     $image = get_field('photo_equipe', "options");
@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-8 reveal-right-1">
                 <div class="agence-content">
                     <p><?php the_field('description_agence', 'options'); ?>
                     </p>

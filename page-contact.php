@@ -8,7 +8,7 @@
 
 
         <div class="container">
-            <div class="row">
+            <div class="row reveal-1">
                 <div class="col-md-12">
                     <div class="all-formulaire-info">
                         <div class="formulaire-tel">
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row reveal-1">
                 <div class="col-md-12">
                     <div class="all-formulaire-deux">
                         <div class="formulaire-adresse">
@@ -62,7 +62,7 @@
             </div>
             <div class="divider"></div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 reveal-right-1">
 
                     <div class="formulaire-description">
                         <p><?php the_field('en-tete', 'options'); ?></p>

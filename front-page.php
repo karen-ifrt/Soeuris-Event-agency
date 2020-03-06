@@ -43,7 +43,7 @@
 
 <div class="container">
     <div class="home-blocks">
-        <div class="row no-gutters">
+        <div class="row no-gutters reveal-2">
             <div class="col-md-6">
                 <div class="first-block">
                     <div class="home-block-img">
@@ -93,7 +93,7 @@
                 </div>
             </div>
         </div>
-        <div class="row no-gutters">
+        <div class="row no-gutters reveal-right-2">
             <div class="col-md-6">
                 <div class="first-block" id="block-reverse">
                     <div class="home-block-content">
@@ -154,7 +154,7 @@
 
 <div class="home-events">
     <div class="container">
-        <div class="row">
+        <div class="row reveal-2">
 
             <?php
             $new_loop = new WP_Query(array(
@@ -205,7 +205,7 @@
 <div class="home-atelier">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-right-2">
                 <div class="image-atelier">
                     <?php
                     $image = get_field('image_atelier', 'options');
@@ -218,7 +218,7 @@
                     } ?>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 reveal-right-3">
                 <div class="titre-atelier">
                     <h3>Nos prochains ateliers</h3>
                 </div>

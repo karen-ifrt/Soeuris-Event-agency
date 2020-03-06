@@ -32,7 +32,7 @@ yoast_breadcrumb('
             if ($images) : ?>
 
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 reveal-1">
                         <div id="slider" class="flexslider">
                             <?php foreach ($images as $image) : ?>
                                 <div class="slides">
@@ -44,7 +44,7 @@ yoast_breadcrumb('
                 <?php endif; ?>
                 <?php while (have_posts()) : the_post(); ?>
 
-                    <div class="col-md-5">
+                    <div class="col-md-5 reveal-right-1">
                         <div class="full-event-content">
                             <div class="event-date">
                                 <p>Date de l'événement : <?php the_field('date_event');  ?></p>

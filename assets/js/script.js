@@ -259,3 +259,52 @@ window.addEventListener("scroll", function () {
 function topFunction() {
     $("html").animate({ scrollTop: "0" }, "600");
 }
+
+
+// Apparition au défilement
+
+const ratio = .1;
+
+const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: ratio
+}
+
+const handleIntersect = function(entries, observer) {
+    entries.forEach(function (entry) {
+        if(entry.intersectionRatio > ratio) {
+            entry.target.classList.add('reveal-visible');
+            observer.unobserve(entry.target);
+        }
+    })
+}
+
+const observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll('[class*="reveal-"]').forEach(function(r) {
+    observer.observe(r);
+})
+
+// Apparition par la droite
+
+const ratio_right = .1;
+
+const options_right = {
+    root: null,
+    rootMargin: "0px",
+    threshold: ratio_right
+}
+
+const handleIntersect_right = function(entries, observer) {
+    entries.forEach(function (entry) {
+        if(entry.intersectionRatio > ratio_right) {
+            entry.target.classList.add('reveal-right-visible');
+            observer.unobserve(entry.target);
+        }
+    })
+}
+
+const observer_right = new IntersectionObserver(handleIntersect_right, options_right);
+document.querySelectorAll('[class*="reveal-right"]').forEach(function(r) {
+    observer_right.observe(r);
+})
