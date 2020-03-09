@@ -308,3 +308,12 @@ const observer_right = new IntersectionObserver(handleIntersect_right, options_r
 document.querySelectorAll('[class*="reveal-right"]').forEach(function(r) {
     observer_right.observe(r);
 })
+
+
+
+// Loader
+
+$(document).ready(function() {
+    $("#loader-wrapper").fadeOut("200");
+})
+
