@@ -180,8 +180,8 @@
                                     <div class="caption">
                                         <h4><?php the_title(); ?></h4>
                                         <div class="plus">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/more.svg" alt="Bouton Plus">
-                                    </div>
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/more.svg" alt="Bouton Plus">
+                                        </div>
                                     </div>
                                 </div>
                             <?php endif; ?>
@@ -237,4 +237,3 @@
 </div>
 
 <?php get_footer(); ?>
-

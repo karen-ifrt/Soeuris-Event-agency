@@ -4,12 +4,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="block-footer">
-                        <p>1 place de la flette,
-                            69510 Soucieu-En-Jarrest
-                        </p>
+                        <p><?php the_field('adresse_formulaire', 'options'); ?></p>
                         <div class="contact-footer">
-                            <p>06 59 56 81 04</p>
-                            <p class="mail-footer">soeurissurlegateau@yahoo.fr</p>
+                            <p><?php the_field('telephone_formulaire', 'options'); ?></p>
+                            <p class="mail-footer"><?php the_field('adresse_mail_formulaire', 'options'); ?></p>
                         </div>
                     </div>
                 </div>

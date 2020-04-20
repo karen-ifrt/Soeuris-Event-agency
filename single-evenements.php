@@ -5,13 +5,11 @@
 
 <section class="single-event">
     <div class="container">
-    <?php
-if ( function_exists('yoast_breadcrumb') ) {
-yoast_breadcrumb('
-<p id="breadcrumbs">','</p>
-');
-}
-?>
+        <?php
+        if (function_exists('yoast_breadcrumb')) {
+            yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
+        }
+        ?>
         <div class="event-title">
             <h1><?php the_title(); ?></h1>
         </div>
@@ -56,10 +54,10 @@ yoast_breadcrumb('
 
                         <div class="banner-event">
                             <a href="<?php echo esc_url(get_permalink(9)); ?>">
-                            <div class="block-event">
-                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.601 318.6" style="enable-background:new 0 0 318.601 318.6;" xml:space="preserve">
-                                    <g>
-                                        <path d="M45.296,318.6h228.007V0H45.296V318.6z M217.358,261.041H101.255v-12.071h116.103V261.041z M232.883,235.849H85.73v-12.076
+                                <div class="block-event">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.601 318.6" style="enable-background:new 0 0 318.601 318.6;" xml:space="preserve">
+                                        <g>
+                                            <path d="M45.296,318.6h228.007V0H45.296V318.6z M217.358,261.041H101.255v-12.071h116.103V261.041z M232.883,235.849H85.73v-12.076
 		h147.152V235.849z M101.255,212.44v-12.07h116.103v12.07H101.255z M57.38,12.15h203.853v121.5L57.38,182.25V12.15z M95.444,105.609
 		c-2.413-1.258-5.297-1.475-8.644-0.654l-14.518,3.552l8.279,33.806l7.014-1.717l-2.975-12.155l7.043-1.725
 		c3.67-0.901,6.296-2.418,7.873-4.551c1.572-2.139,1.872-5.2,0.896-9.191C99.518,109.318,97.864,106.866,95.444,105.609z
@@ -78,46 +76,46 @@ yoast_breadcrumb('
 		l-16.875-18.262l8.332-2.041l10.626,13.004l3.105-16.369L223.808,71.4z M243.098,95.494l1.619,6.631l-6.855,1.68l-1.624-6.632
 		L243.098,95.494z M237.318,94.004l-5.765-15.298l-2.099-8.572l7.178-1.754l2.104,8.569l2.004,16.216L237.318,94.004z
 		 M187.658,40.706H72.278v-8.517h115.38V40.706z" />
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                </svg>
-                                <p>Toutes nos prestations</p>
-                            </div>
-                        </a>
-                        <a href="<?php echo get_post_type_archive_link ( 'evenements' ); ?>">
-                            <div class="block-event">
-                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 33.277 33.277" style="enable-background:new 0 0 33.277 33.277;" xml:space="preserve">
-                                    <g>
-                                        <path d="M11.246,18.75c1.122,3.728,1.396,7.667,1.222,11.541c-0.023,0.472,0.621,0.173,0.636-0.171
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+                                    <p>Toutes nos prestations</p>
+                                </div>
+                            </a>
+                            <a href="<?php echo get_post_type_archive_link('evenements'); ?>">
+                                <div class="block-event">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 33.277 33.277" style="enable-background:new 0 0 33.277 33.277;" xml:space="preserve">
+                                        <g>
+                                            <path d="M11.246,18.75c1.122,3.728,1.396,7.667,1.222,11.541c-0.023,0.472,0.621,0.173,0.636-0.171
 		c0.178-3.924-0.089-7.926-1.226-11.703C11.753,18.003,11.15,18.428,11.246,18.75z M21.456,22.114
 		c0.277,0.991,0.081,2.011,0.14,3.023c0.078,1.353,0.907,2.392,1.919,3.219c0.062-0.197,0.128-0.393,0.193-0.589
 		c-0.926,0.402-2.413,1.068-2.334,2.307c0.069,1.067,0.883,1.831,0.692,2.968c-0.079,0.459,0.579,0.161,0.636-0.17
@@ -136,48 +134,48 @@ yoast_breadcrumb('
 		c0.189,0.804,0.588,1.57,1.114,2.245c-0.621-0.588-1.149-1.302-1.482-2.126c-0.337-0.822-0.464-1.742-0.396-2.646
 		C5.711,7.688,5.955,6.8,6.303,5.965c0.174-0.419,0.375-0.826,0.6-1.221C7.016,4.546,7.134,4.352,7.259,4.16
 		c0.064-0.097,0.127-0.191,0.194-0.287c0.07-0.097,0.133-0.186,0.219-0.293l1.142,1.046C8.756,4.677,8.681,4.751,8.617,4.82z" />
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                </svg>
-
-                                <p>Tous nos événements</p>
-                            </div>
-                        </a>
-                        <a href="<?php echo esc_url(get_permalink(15)); ?>">
-                            <div class="block-event">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <g>
+                                        </g>
                                         <g>
-                                            <path d="M426.667,0h-320C83.146,0,64,19.135,64,42.667v42.667H53.333c-5.896,0-10.667,4.771-10.667,10.667
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+
+                                    <p>Tous nos événements</p>
+                                </div>
+                            </a>
+                            <a href="<?php echo esc_url(get_permalink(15)); ?>">
+                                <div class="block-event">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M426.667,0h-320C83.146,0,64,19.135,64,42.667v42.667H53.333c-5.896,0-10.667,4.771-10.667,10.667
 			s4.771,10.667,10.667,10.667H96c5.875,0,10.667,4.781,10.667,10.667c0,5.885-4.792,10.667-10.667,10.667H74.667
 			C68.771,128,64,132.771,64,138.667V192H53.333c-5.896,0-10.667,4.771-10.667,10.667c0,5.896,4.771,10.667,10.667,10.667H96
 			c5.875,0,10.667,4.781,10.667,10.667S101.875,234.667,96,234.667H74.667c-5.896,0-10.667,4.771-10.667,10.667v53.333H53.333
@@ -190,63 +188,63 @@ yoast_breadcrumb('
 			c0,14.813,2.313,29.344,6.875,43.208c2.729,8.646,0.479,17.854-5.833,24.167l-18.688,24.885
 			c16.063,29.51,34.896,48.344,64.625,64.615l26-19.635c5.25-5.365,14.729-7.615,23.208-4.698
 			c13.708,4.521,28.25,6.844,43.063,6.844c13.063,0,23.708,10.635,23.708,23.708V338.958z" />
+                                            </g>
                                         </g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                    <g>
-                                    </g>
-                                </svg>
-                                <p>Nous contacter</p>
-                            </div>
-                        </a>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+                                    <p>Nous contacter</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
                 </div>
-<?php endwhile; ?>
+            <?php endwhile; ?>
 
 
-<?php
+        <?php
         }
-?>
+        ?>
 
-<div class="site__navigation">
-    <div class="site__navigation__next">
-        <?php next_post_link( 'Événement précédent<br>%link' ); ?> 
+        <div class="site__navigation">
+            <div class="site__navigation__next">
+                <?php next_post_link('Événement précédent<br>%link'); ?>
+            </div>
+            <div class="site__navigation__prev">
+                <?php previous_post_link('Événement suivant<br>%link'); ?>
+            </div>
+        </div>
     </div>
-    <div class="site__navigation__prev">
-		<?php previous_post_link( 'Événement suivant<br>%link' ); ?>
     </div>
-</div>
-</div>
-</div>
 
 </section>
 

@@ -25,10 +25,10 @@
             <?php
             if (have_posts()) :
                 while (have_posts()) : the_post();
-                    $terms_portfolio = get_the_terms(get_the_ID(), 'category');
+                    $terms_category = get_the_terms(get_the_ID(), 'category');
             ?>
 
-                    <div class="col-md-3 mb-5" data-tag="<?php echo $terms_portfolio[0]->slug; ?>">
+                    <div class="col-md-3 mb-5" data-tag="<?php echo $terms_category[0]->slug; ?>">
                         <div class="all-event-content">
                             <a href="<?php the_permalink(); ?>">
                                 <div class="event-first-pic">
@@ -43,7 +43,7 @@
                                 <div class="caption">
                                     <h4><?php the_title(); ?></h4>
                                     <div class="plus">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/more.svg" alt="Bouton Plus">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/more.svg" alt="Bouton Plus">
                                     </div>
                                 </div>
                             </div>
@@ -56,8 +56,6 @@
         </div>
     </div>
 </section>
-
-<?php the_posts_pagination(); ?>
 
 
 <?php get_footer(); ?>

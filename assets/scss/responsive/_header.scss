@@ -79,6 +79,12 @@
                     .phone {
                         display: flex;
                         align-items: center;
+                        a {
+                            color: inherit;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
                     }
 
                     .home {

@@ -5,7 +5,8 @@ $('.hero-carousel').slick({
     autoplay: true,
     speed: 500,
     fade: true,
-    cssEase: 'linear'
+  cssEase: 'linear',
+  pauseOnHover: false
   });
 
 $('#slider').slick({

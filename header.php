@@ -5,6 +5,8 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" />
+
     <?php wp_head(); ?>
 </head>
 
@@ -23,7 +25,8 @@
                         <div class="contact-nav">
                             <div class="phone">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone.svg" alt="Téléphone Soeur'is sur le gateau" width="18">
-                                <p>06 59 56 81 04</p>
+                                <?php $phone = get_field('telephone_formulaire', 'options'); ?>
+                                <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
                             </div>
                             <div class="home">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home.svg" alt="Adresse Soeur'is sur le gateau" width="18">
@@ -45,7 +48,7 @@
 
                         <a href="<?php echo home_url('/'); ?>">
 
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_2.jpg" alt="Soeur'is sur le gateau" class="logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_2.png" alt="Soeur'is sur le gateau" class="logo">
                         </a>
                     </div>
 
@@ -62,7 +65,7 @@
             <nav class="menu-mobile" id="menu-mobile">
                 <div class="logo-soeuris">
                     <a href="<?php echo home_url('/'); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_2.jpg" alt="Soeur'is sur le gateau" class="logo" width="200">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_2.png" alt="Soeur'is sur le gateau" class="logo" width="200">
                     </a>
                 </div>
                 <div class="burger-mobile" id="burger-mobile">
@@ -82,7 +85,7 @@
                     <div class="contact-nav">
                         <div class="phone">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone.svg" alt="Téléphone Soeur'is sur le gateau" width="18">
-                            <p>06 59 56 81 04</p>
+                            <a href="tel:+33659568104"><?php the_field('telephone_formulaire', 'options'); ?></a>
                         </div>
                         <div class="home">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home.svg" alt="Adresse Soeur'is sur le gateau" width="18">
